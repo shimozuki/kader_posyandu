@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kader_posyandu/layout/footer_bar.dart';
+import 'package:kader_posyandu/screen/jadwal.dart';
+import 'package:kader_posyandu/screen/my_employes.dart';
+import 'package:kader_posyandu/screen/tree.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -30,6 +33,7 @@ class _HomeState extends State<Home> {
       // );
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -229,93 +233,115 @@ class _HomeState extends State<Home> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.center,
                                       children: [
-                                        Container(
-                                          // card19TR (215:1577)
-                                          margin:
-                                              EdgeInsets.fromLTRB(0, 0, 16, 0),
-                                          padding: EdgeInsets.fromLTRB(
-                                              37.5, 25, 37.5, 25),
-                                          width: 156,
-                                          height: double.infinity,
-                                          decoration: BoxDecoration(
-                                            color: Color(0xff407ce2),
-                                            borderRadius:
-                                                BorderRadius.circular(16),
-                                          ),
+                                        InkWell(
+                                          onTap: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Jadwal()),
+                                            );
+                                          },
                                           child: Container(
-                                            // contentrsd (215:1578)
-                                            width: double.infinity,
+                                            // card19TR (215:1577)
+                                            margin: EdgeInsets.fromLTRB(
+                                                0, 0, 16, 0),
+                                            padding: EdgeInsets.fromLTRB(
+                                                37.5, 25, 37.5, 25),
+                                            width: 156,
                                             height: double.infinity,
-                                            child: Column(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.center,
-                                              children: [
-                                                Container(
-                                                  // icondoctor1kX (215:1912)
-                                                  margin: EdgeInsets.fromLTRB(
-                                                      0, 0, 0, 4),
-                                                  width: 31,
-                                                  height: 31,
-                                                  child: Icon(
-                                                    Icons.medical_information,
-                                                    color: Color(0xffffffff),
+                                            decoration: BoxDecoration(
+                                              color: Color(0xff407ce2),
+                                              borderRadius:
+                                                  BorderRadius.circular(16),
+                                            ),
+                                            child: Container(
+                                              // contentrsd (215:1578)
+                                              width: double.infinity,
+                                              height: double.infinity,
+                                              child: Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.center,
+                                                children: [
+                                                  Container(
+                                                    // icondoctor1kX (215:1912)
+                                                    margin: EdgeInsets.fromLTRB(
+                                                        0, 0, 0, 4),
+                                                    width: 31,
+                                                    height: 31,
+                                                    child: Icon(
+                                                      Icons.medical_information,
+                                                      color: Color(0xffffffff),
+                                                    ),
                                                   ),
-                                                ),
-                                                Text(
-                                                  // posyanduKFR (215:1580)
-                                                  'Posyandu',
-                                                  style: GoogleFonts.poppins(
-                                                    fontSize: 14,
-                                                    fontWeight: FontWeight.w500,
-                                                    height: 1.75,
-                                                    color: Color(0xffffffff),
+                                                  Text(
+                                                    // posyanduKFR (215:1580)
+                                                    'Posyandu',
+                                                    style: GoogleFonts.poppins(
+                                                      fontSize: 14,
+                                                      fontWeight:
+                                                          FontWeight.w500,
+                                                      height: 1.75,
+                                                      color: Color(0xffffffff),
+                                                    ),
                                                   ),
-                                                ),
-                                              ],
+                                                ],
+                                              ),
                                             ),
                                           ),
                                         ),
-                                        Container(
-                                          // card2Fum (215:1581)
-                                          padding: EdgeInsets.fromLTRB(
-                                              45, 25, 45, 25),
-                                          width: 156,
-                                          height: double.infinity,
-                                          decoration: BoxDecoration(
-                                            color: Color(0xff407ce2),
-                                            borderRadius:
-                                                BorderRadius.circular(16),
-                                          ),
+                                        InkWell(
+                                          onTap: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Employes()),
+                                            );
+                                          },
                                           child: Container(
-                                            // contentPm5 (215:1582)
-                                            width: double.infinity,
+                                            // card2Fum (215:1581)
+                                            padding: EdgeInsets.fromLTRB(
+                                                45, 25, 45, 25),
+                                            width: 156,
                                             height: double.infinity,
-                                            child: Column(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.center,
-                                              children: [
-                                                Container(
-                                                  // iconambulancexJP (215:1925)
-                                                  margin: EdgeInsets.fromLTRB(
-                                                      0, 0, 0, 4),
-                                                  width: 31,
-                                                  height: 31,
-                                                  child: Icon(
-                                                    Icons.medical_services,
-                                                    color: Color(0xffffffff),
+                                            decoration: BoxDecoration(
+                                              color: Color(0xff407ce2),
+                                              borderRadius:
+                                                  BorderRadius.circular(16),
+                                            ),
+                                            child: Container(
+                                              // contentPm5 (215:1582)
+                                              width: double.infinity,
+                                              height: double.infinity,
+                                              child: Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.center,
+                                                children: [
+                                                  Container(
+                                                    // iconambulancexJP (215:1925)
+                                                    margin: EdgeInsets.fromLTRB(
+                                                        0, 0, 0, 4),
+                                                    width: 31,
+                                                    height: 31,
+                                                    child: Icon(
+                                                      Icons.medical_services,
+                                                      color: Color(0xffffffff),
+                                                    ),
                                                   ),
-                                                ),
-                                                Text(
-                                                  // rujukanfyV (215:1584)
-                                                  'Rujukan',
-                                                  style: GoogleFonts.poppins(
-                                                    fontSize: 14,
-                                                    fontWeight: FontWeight.w500,
-                                                    height: 1.75,
-                                                    color: Color(0xffffffff),
+                                                  Text(
+                                                    // rujukanfyV (215:1584)
+                                                    'Rujukan',
+                                                    style: GoogleFonts.poppins(
+                                                      fontSize: 14,
+                                                      fontWeight:
+                                                          FontWeight.w500,
+                                                      height: 1.75,
+                                                      color: Color(0xffffffff),
+                                                    ),
                                                   ),
-                                                ),
-                                              ],
+                                                ],
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -330,49 +356,60 @@ class _HomeState extends State<Home> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.center,
                                       children: [
-                                        Container(
-                                          // card1n2X (215:1586)
-                                          margin:
-                                              EdgeInsets.fromLTRB(0, 0, 16, 0),
-                                          padding: EdgeInsets.fromLTRB(
-                                              32.5, 28.5, 32.5, 28.5),
-                                          width: 156,
-                                          height: double.infinity,
-                                          decoration: BoxDecoration(
-                                            color: Color(0xff407ce2),
-                                            borderRadius:
-                                                BorderRadius.circular(16),
-                                          ),
+                                        InkWell(
+                                          onTap: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Tree()),
+                                            );
+                                          },
                                           child: Container(
-                                            // content6Z1 (215:1587)
-                                            width: double.infinity,
+                                            // card1n2X (215:1586)
+                                            margin: EdgeInsets.fromLTRB(
+                                                0, 0, 16, 0),
+                                            padding: EdgeInsets.fromLTRB(
+                                                32.5, 28.5, 32.5, 28.5),
+                                            width: 156,
                                             height: double.infinity,
-                                            child: Column(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.center,
-                                              children: [
-                                                Container(
-                                                  // vectorRLP (215:1945)
-                                                  margin: EdgeInsets.fromLTRB(
-                                                      0, 0, 0, 4),
-                                                  width: 27,
-                                                  height: 24,
-                                                  child: Icon(
-                                                    Icons.person_3,
-                                                    color: Color(0xffffffff),
+                                            decoration: BoxDecoration(
+                                              color: Color(0xff407ce2),
+                                              borderRadius:
+                                                  BorderRadius.circular(16),
+                                            ),
+                                            child: Container(
+                                              // content6Z1 (215:1587)
+                                              width: double.infinity,
+                                              height: double.infinity,
+                                              child: Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.center,
+                                                children: [
+                                                  Container(
+                                                    // vectorRLP (215:1945)
+                                                    margin: EdgeInsets.fromLTRB(
+                                                        0, 0, 0, 4),
+                                                    width: 27,
+                                                    height: 24,
+                                                    child: Icon(
+                                                      Icons.person_3,
+                                                      color: Color(0xffffffff),
+                                                    ),
                                                   ),
-                                                ),
-                                                Text(
-                                                  // datakaderwpX (215:1589)
-                                                  'Data Kader',
-                                                  style: GoogleFonts.poppins(
-                                                    fontSize: 14,
-                                                    fontWeight: FontWeight.w500,
-                                                    height: 1.75,
-                                                    color: Color(0xffffffff),
+                                                  Text(
+                                                    // datakaderwpX (215:1589)
+                                                    'Data Kader',
+                                                    style: GoogleFonts.poppins(
+                                                      fontSize: 14,
+                                                      fontWeight:
+                                                          FontWeight.w500,
+                                                      height: 1.75,
+                                                      color: Color(0xffffffff),
+                                                    ),
                                                   ),
-                                                ),
-                                              ],
+                                                ],
+                                              ),
                                             ),
                                           ),
                                         ),
