@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kader_posyandu/layout/footer_bar.dart';
+import 'package:kader_posyandu/screen/add_lansia.dart';
 import 'package:kader_posyandu/screen/jadwal.dart';
 import 'package:kader_posyandu/screen/my_employes.dart';
 import 'package:kader_posyandu/screen/tree.dart';
@@ -186,17 +187,27 @@ class _HomeState extends State<Home> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.center,
                                       children: [
-                                        Container(
-                                          // pendataanA2X (215:1606)
-                                          margin:
-                                              EdgeInsets.fromLTRB(0, 0, 31, 0),
-                                          child: Text(
-                                            'Pendataan',
-                                            style: GoogleFonts.poppins(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.w400,
-                                              height: 1.5,
-                                              color: Color(0xffffffff),
+                                        InkWell(
+                                          onTap: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Addlansia()),
+                                            );
+                                          },
+                                          child: Container(
+                                            // pendataanA2X (215:1606)
+                                            margin:
+                                                EdgeInsets.fromLTRB(0, 0, 31, 0),
+                                            child: Text(
+                                              'Pendataan',
+                                              style: GoogleFonts.poppins(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.w400,
+                                                height: 1.5,
+                                                color: Color(0xffffffff),
+                                              ),
                                             ),
                                           ),
                                         ),
